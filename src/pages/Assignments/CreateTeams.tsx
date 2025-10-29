@@ -18,23 +18,23 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
    Types
 ============================================================================= */
 
-type ContextType = 'assignment' | 'course';
+export type ContextType = 'assignment' | 'course';
 
-interface Participant {
+export interface Participant {
   id: string | number;
   username: string;
   fullName?: string;
   teamName?: string;
 }
 
-interface Team {
+export interface Team {
   id: string | number;
   name: string;
   mentor?: Participant;
   members: Participant[];
 }
 
-interface LoaderPayload {
+export interface LoaderPayload {
   contextType?: ContextType;
   contextName?: string;
   initialTeams?: Team[];

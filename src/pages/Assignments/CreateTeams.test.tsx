@@ -1,7 +1,7 @@
 import React, { act } from "react";
 import { render, screen, within } from "@testing-library/react";
 import CreateTeams from "./CreateTeams";
-import {Team, LoaderPayload, Participant, ContextType} from "./CreateTeams"
+import {Team, Participant, ContextType} from "./CreateTeams"
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
